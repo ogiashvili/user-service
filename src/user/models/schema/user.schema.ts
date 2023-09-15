@@ -18,7 +18,7 @@ export class User {
   @Prop({ required: false, type: [AddressSchema] })
   public addresses: Address[];
 
-  @Prop({ required: true, type: String })
+  @Prop({ required: true, type: String, select: false })
   public password: string;
 }
 
